@@ -1,10 +1,24 @@
 import{Header} from '../../Components/Header';
+import background from '../../assets/background.png'
+import './style.css';
 
 function App() {
   return (
     <div className="App">
 
       <Header/>
+      <div className='conteudo'>
+
+        <img src={background} className='background' alt='foto do fundo, simbolo do github'/>
+
+        <div className='info'>
+          <div>
+            <input name='usuario' placeholder='@username' />
+            <button>Buscar</button>
+          </div>
+        </div>
+
+      </div>
      
     </div>
   );
